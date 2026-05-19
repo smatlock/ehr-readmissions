@@ -1,6 +1,9 @@
 # Overview
 End-to-end machine learning pipeline for predicting 30-day hospital readmissions using EHR data. Includes temporal feature engineering, leakage prevention, fairness analysis, SHAP explainability, model comparison (RF/XGBoost).
 
+## Getting Started
+
+Download visits.csv and vitals.csv from Kaggle [here](https://www.kaggle.com/datasets/7290f7b5b8292a5caf1e2bd15c2ea409c9e51f842c0f9aa1a888cbe0fa61c961)
 ## Installation
 
 1. Clone the repository:
