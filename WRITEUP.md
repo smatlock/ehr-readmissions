@@ -1,4 +1,4 @@
-# 30-day readmission modeling exercise and wanted to summarize my approach, results, and recommendations.
+# 30-day Readmission Modeling Exercise Approach, Results, and Recommendations.
 
 ## 1. Approach
 ### How did you approach the problem, and why?
