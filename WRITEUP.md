@@ -24,7 +24,7 @@ Because readmissions were the minority class, I compared models with imbalance-a
 ## 2. Model performance
 ### What was the model performance?
 
-The final selected model was a reduced 25-feature Random Forest at a 0.50 threshold. I reduced the initial 140+ feature set to a set of 25 fetaures for ease of explainability and post-deployment maintenance. I selected this model because it preserved the performance of the larger models while reducing complexity and producing a practical alert volume.
+The final selected model was a reduced 25-feature Random Forest at a 0.50 threshold. I reduced the initial 140+ feature set to a set of 25 features for ease of explainability and post-deployment maintenance. I selected this model because it preserved the performance of the larger models while reducing complexity and producing a practical alert volume.
 
 On the held-out test set of 1,071 encounters, the final 25-feature Random Forest achieved:
 
@@ -55,7 +55,7 @@ I would avoid leading with AUROC and instead frame the model in operational term
 
 I would also explain that the model is not intended to replace clinical judgment. It should be used as a prioritization tool to help Case Management focus attention on patients who may benefit from additional discharge planning, follow-up scheduling, medication reconciliation, social support, or post-discharge outreach.
 
-My recommendation would be to pilot the model in a silent-run or shadow mode before live deployment. During this period, Case Management could review the daily 6AM risk list, compare it with their current prioritization process, and give feedback on whether the flagged patients make clinical and operational sense. Since readmission reduction is tied to care coordination and hospital quality initiatives, this type of workflow-aligned intervention is consistent with broader hospital readmission reduction goals. ([Centers for Medicare & Medicaid Services][2])
+My recommendation would be to pilot the model in a silent-run or shadow mode before live deployment. During this period, Case Management could review the daily 6AM risk list, compare it with their current prioritization process, and give feedback on whether the flagged patients make clinical and operational sense. Since readmission reduction is tied to care coordination and hospital quality initiatives, this type of workflow-aligned intervention is consistent with broader hospital readmission reduction goals.
 
 I would recommend starting with the 0.50 threshold because it produced a practical balance: it flagged 13.5% of patients, achieved 81.4% PPV, and captured 90.8% of readmissions. If Case Management has more capacity, we could lower the threshold to capture more readmissions. If alert burden is too high, we could raise the threshold to increase precision.
 
